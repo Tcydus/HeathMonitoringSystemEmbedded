@@ -208,7 +208,6 @@ void loop()
     
     if (patient_calling)
     {
-        // uint8_t dutyCycle = patient_calling ? 200 : 0;
         if( millis() - last_buzzer_time <= BUZZER_DURATION){
             ledcWrite(channel, 200);
         }
